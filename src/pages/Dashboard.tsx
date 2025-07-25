@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Plus, Workflow, Clock, MoreVertical } from "lucide-react";
+import { Plus, Workflow, Clock, MoreVertical, Map } from "lucide-react";
 import { 
   DropdownMenu, 
   DropdownMenuContent, 
@@ -104,10 +104,18 @@ const Dashboard = () => {
                 Manage your documentation and architecture workflows
               </p>
             </div>
-            <Button>
-              <Plus className="w-4 h-4 mr-2" />
-              New Workflow
-            </Button>
+            <div className="flex items-center gap-3">
+              <Button variant="outline" asChild>
+                <Link to="/workspace">
+                  <Map className="w-4 h-4 mr-2" />
+                  See Map
+                </Link>
+              </Button>
+              <Button>
+                <Plus className="w-4 h-4 mr-2" />
+                New Workflow
+              </Button>
+            </div>
           </div>
 
           {/* Projects Grid */}
