@@ -45,7 +45,7 @@ const Home = () => {
               <Button variant="ghost" asChild className="hover-lift transition-all duration-300 hover:text-primary">
                 <Link to="/login">Login</Link>
               </Button>
-              <Button asChild className="hover-lift animate-pulse-glow bg-gradient-to-r from-primary to-accent hover:shadow-lg transition-all duration-300">
+              <Button asChild className="hover-lift bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:animate-pulse transition-all duration-300">
                 <Link to="/signup">Sign Up</Link>
               </Button>
             </div>
@@ -57,9 +57,9 @@ const Home = () => {
       <main className="relative overflow-hidden">
         {/* Background particles */}
         <div className="absolute inset-0 parallax" data-speed="0.5">
-          <div className="absolute top-20 left-10 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
-          <div className="absolute top-40 right-20 w-1 h-1 bg-accent/40 rounded-full animate-float"></div>
-          <div className="absolute bottom-20 left-1/4 w-1.5 h-1.5 bg-primary/20 rounded-full animate-float"></div>
+          <div className="absolute top-20 left-10 w-2 h-2 bg-primary/30 rounded-full"></div>
+          <div className="absolute top-40 right-20 w-1 h-1 bg-accent/40 rounded-full"></div>
+          <div className="absolute bottom-20 left-1/4 w-1.5 h-1.5 bg-primary/20 rounded-full"></div>
         </div>
         
         <div className="px-6 py-24 relative z-10">
@@ -80,7 +80,7 @@ const Home = () => {
                       pauseTime={1500}
                     />
                   </div>
-                  <div className="text-gradient animate-float">
+                  <div className="text-gradient">
                     Map workflows.
                   </div>
                 </h1>
@@ -91,7 +91,7 @@ const Home = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
-                <Button size="lg" asChild className="group hover-lift bg-gradient-to-r from-primary via-primary to-accent text-lg px-8 py-6 animate-pulse-glow relative overflow-hidden">
+                <Button size="lg" asChild className="group hover-lift bg-gradient-to-r from-primary via-primary to-accent text-lg px-8 py-6 hover:animate-pulse relative overflow-hidden">
                   <Link to="/signup" className="flex items-center gap-3" data-testid="button-hero-signup">
                     <span className="relative z-10">Get Started Free</span>
                     <ArrowRight className="w-5 h-5 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
@@ -241,7 +241,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll stagger-1">
-                <Button size="lg" asChild className="group hover-lift bg-gradient-to-r from-primary to-accent text-lg px-10 py-6 animate-pulse-glow relative overflow-hidden">
+                <Button size="lg" asChild className="group hover-lift bg-gradient-to-r from-primary to-accent text-lg px-10 py-6 hover:animate-pulse relative overflow-hidden">
                   <Link to="/signup" className="flex items-center gap-3" data-testid="button-final-cta">
                     <span className="relative z-10">Get Started Free</span>
                     <ArrowRight className="w-5 h-5 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
