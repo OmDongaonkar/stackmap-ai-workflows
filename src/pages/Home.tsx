@@ -12,7 +12,7 @@ const Home = () => {
       <nav className="border-b border-border backdrop-blur-sm bg-background/80 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-xl font-semibold text-foreground animate-fade-in">
+            <div className="text-xl font-medium text-foreground animate-fade-in">
               Stackmap
             </div>
             <div className="flex items-center gap-3">
@@ -38,14 +38,14 @@ const Home = () => {
                 <Zap className="w-3 h-3 mr-1" />
                 AI-Powered Developer Tools
               </Badge>
-              <h1 className="text-5xl sm:text-6xl font-bold tracking-tight text-foreground">
+              <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-foreground">
                 Map workflows.
                 <br />
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   Generate docs.
                 </span>
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto font-light">
                 AI-powered platform for developers to visualize architectures, 
                 create documentation, and improve team knowledge sharing.
               </p>
@@ -71,8 +71,8 @@ const Home = () => {
                 <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <Workflow className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Visual Workflows</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-lg font-medium text-foreground">Visual Workflows</h3>
+                <p className="text-sm text-muted-foreground font-light">
                   Transform rough sketches into structured workflow diagrams with AI assistance.
                 </p>
               </CardContent>
@@ -83,8 +83,8 @@ const Home = () => {
                 <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <Code className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Smart Architecture</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-lg font-medium text-foreground">Smart Architecture</h3>
+                <p className="text-sm text-muted-foreground font-light">
                   Generate clean architecture diagrams from codebases and improve system understanding.
                 </p>
               </CardContent>
@@ -95,8 +95,8 @@ const Home = () => {
                 <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <FileText className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Auto Documentation</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-lg font-medium text-foreground">Auto Documentation</h3>
+                <p className="text-sm text-muted-foreground font-light">
                   Generate comprehensive documentation from code and improve team onboarding.
                 </p>
               </CardContent>
