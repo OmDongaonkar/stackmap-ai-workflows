@@ -65,10 +65,10 @@ const Workspace = () => {
               </Link>
               <nav className="flex items-center gap-1">
                 <Button variant="ghost" size="sm" asChild>
-                  <Link to="/dashboard">Workflows</Link>
+                  <Link to="/workspace">Projects</Link>
                 </Button>
                 <Button variant="ghost" size="sm" asChild>
-                  <Link to="/workspace">Workspace</Link>
+                  <Link to="/dashboard">Explore</Link>
                 </Button>
                 <Button variant="ghost" size="sm">
                   Templates
@@ -99,7 +99,7 @@ const Workspace = () => {
           {/* Page Header */}
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-foreground">Workflows</h1>
+              <h1 className="text-2xl font-bold text-foreground">My Projects</h1>
               <p className="text-muted-foreground">
                 Manage your documentation and architecture workflows
               </p>
@@ -108,7 +108,7 @@ const Workspace = () => {
               <Button variant="outline" asChild>
                 <Link to="/dashboard">
                   <Map className="w-4 h-4 mr-2" />
-                  See Map
+                  Explore Maps
                 </Link>
               </Button>
               <Button>

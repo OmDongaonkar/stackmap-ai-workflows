@@ -82,13 +82,13 @@ const Dashboard = () => {
               </Link>
               <nav className="flex items-center gap-1">
                 <Button variant="ghost" size="sm" asChild>
-                  <Link to="/dashboard">Workflows</Link>
+                  <Link to="/workspace">Projects</Link>
+                </Button>
+                <Button variant="ghost" size="sm" asChild>
+                  <Link to="/dashboard">Explore</Link>
                 </Button>
                 <Button variant="ghost" size="sm">
                   Templates
-                </Button>
-                <Button variant="ghost" size="sm">
-                  Settings
                 </Button>
               </nav>
             </div>
@@ -119,13 +119,13 @@ const Dashboard = () => {
               <Button variant="ghost" size="sm" asChild>
                 <Link to="/workspace">
                   <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Workflows
+                  Back to Projects
                 </Link>
               </Button>
               <div>
-                <h1 className="text-2xl font-bold text-foreground">Workspace</h1>
+                <h1 className="text-2xl font-bold text-foreground">Explore Maps</h1>
                 <p className="text-muted-foreground">
-                  Explore and collaborate on system architecture maps
+                  Discover and collaborate on system architecture maps
                 </p>
               </div>
             </div>

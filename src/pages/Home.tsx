@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import TypingEffect from "@/components/TypingEffect";
 import { ArrowRight, Workflow, Code, FileText, Zap, Shield, Globe } from "lucide-react";
 
 const Home = () => {
@@ -39,10 +40,15 @@ const Home = () => {
                 AI-Powered Developer Tools
               </Badge>
               <h1 className="text-5xl sm:text-6xl font-light tracking-tight text-foreground">
-                Map workflows.
+                <TypingEffect 
+                  phrases={["Generate docs.", "Understand codebase.", "Easy onboarding."]}
+                  typingSpeed={80}
+                  deletingSpeed={40}
+                  pauseTime={1500}
+                />
                 <br />
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  Generate docs.
+                  Map workflows.
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto font-light">
