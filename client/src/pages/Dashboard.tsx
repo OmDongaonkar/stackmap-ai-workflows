@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Map, Users, Globe, MoreVertical } from "lucide-react";
+import { Plus, Map, Users, Globe, MoreVertical } from "lucide-react";
 import { 
   DropdownMenu, 
   DropdownMenuContent, 
@@ -82,10 +82,7 @@ const Dashboard = () => {
               </Link>
               <nav className="flex items-center gap-1">
                 <Button variant="ghost" size="sm" asChild>
-                  <Link to="/workspace">Projects</Link>
-                </Button>
-                <Button variant="ghost" size="sm" asChild>
-                  <Link to="/dashboard">Explore</Link>
+                  <Link to="/dashboard">Dashboard</Link>
                 </Button>
                 <Button variant="ghost" size="sm">
                   Templates
@@ -115,20 +112,16 @@ const Dashboard = () => {
         <div className="space-y-6">
           {/* Page Header */}
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <Button variant="ghost" size="sm" asChild>
-                <Link to="/workspace">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Projects
-                </Link>
-              </Button>
-              <div>
-                <h1 className="text-2xl font-bold text-foreground">Explore Maps</h1>
-                <p className="text-muted-foreground">
-                  Discover and collaborate on system architecture maps
-                </p>
-              </div>
+            <div>
+              <h1 className="text-2xl font-bold text-foreground">My Maps</h1>
+              <p className="text-muted-foreground">
+                Discover and collaborate on system architecture maps
+              </p>
             </div>
+            <Button data-testid="button-create-map">
+              <Plus className="w-4 h-4 mr-2" />
+              Create New Map
+            </Button>
           </div>
 
           {/* Maps Grid */}
