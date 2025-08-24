@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import TypingEffect from "@/components/TypingEffect";
-import { ArrowRight, Workflow, Code, FileText, Zap, Shield, Globe, AlertTriangle, CheckCircle, Edit, Settings, Bot, Layout, List, Template, Users, Target, Share, Check, X } from "lucide-react";
+import { ArrowRight, Workflow, Code, FileText, Zap, Shield, Globe, AlertTriangle, CheckCircle, Edit, Settings, Bot, Layout, List, Clipboard, Users, Target, Share, Check, X } from "lucide-react";
 
 const Home = () => {
   return (
@@ -234,7 +234,7 @@ const Home = () => {
             <Card className="group hover-scale bg-card/50 backdrop-blur-sm border-border/50">
               <CardContent className="p-6 text-center space-y-4">
                 <div className="w-12 h-12 mx-auto bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Template className="w-6 h-6 text-primary" />
+                  <Clipboard className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-medium text-foreground">Designed Templates</h3>
                 <p className="text-sm text-muted-foreground font-light">
