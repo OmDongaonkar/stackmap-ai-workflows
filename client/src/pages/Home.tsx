@@ -55,12 +55,6 @@ const Home = () => {
 
       {/* Hero Section */}
       <main className="relative overflow-hidden">
-        {/* Background particles */}
-        <div className="absolute inset-0 parallax" data-speed="0.5">
-          <div className="absolute top-20 left-10 w-2 h-2 bg-primary/30 rounded-full"></div>
-          <div className="absolute top-40 right-20 w-1 h-1 bg-accent/40 rounded-full"></div>
-          <div className="absolute bottom-20 left-1/4 w-1.5 h-1.5 bg-primary/20 rounded-full"></div>
-        </div>
         
         <div className="px-6 py-24 relative z-10">
           <div className="max-w-4xl mx-auto">
