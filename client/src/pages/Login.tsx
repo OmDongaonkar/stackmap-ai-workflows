@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
+import { FaGithub } from "react-icons/fa";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -73,12 +75,29 @@ const Login = () => {
                 type="submit" 
                 className="w-full" 
                 disabled={isLoading}
+                data-testid="button-signin"
               >
                 {isLoading ? "Signing in..." : "Sign in"}
               </Button>
             </form>
 
-            <div className="mt-6 text-center space-y-4">
+            <div className="relative my-6">
+              <Separator />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="bg-card px-2 text-sm text-muted-foreground">or</span>
+              </div>
+            </div>
+
+            <Button 
+              variant="outline" 
+              className="w-full mb-6" 
+              data-testid="button-github-signin"
+            >
+              <FaGithub className="w-4 h-4 mr-2" />
+              Continue with GitHub
+            </Button>
+
+            <div className="text-center space-y-4">
               <Link 
                 to="/forgot-password" 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"

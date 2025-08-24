@@ -80,14 +80,6 @@ const Dashboard = () => {
               <Link to="/" className="text-xl font-semibold text-foreground">
                 Stackmap
               </Link>
-              <nav className="flex items-center gap-1">
-                <Button variant="ghost" size="sm" asChild>
-                  <Link to="/dashboard">Dashboard</Link>
-                </Button>
-                <Button variant="ghost" size="sm">
-                  Templates
-                </Button>
-              </nav>
             </div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
