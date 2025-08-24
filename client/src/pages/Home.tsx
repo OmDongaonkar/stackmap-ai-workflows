@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="border-b border-border/50 glass-card sticky top-0 z-50 transition-all duration-300">
+      <nav className="border-b border-border/50 backdrop-blur-sm bg-background/80 dark:bg-background/80 sticky top-0 z-50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-xl font-bold text-gradient animate-fade-in-left">
@@ -229,34 +229,6 @@ const Home = () => {
             </div>
           </section>
 
-          {/* Final CTA Section */}
-          <section className="bg-gradient-to-br from-primary/10 via-transparent to-accent/10 py-24 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
-            <div className="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
-              <div className="space-y-4 animate-on-scroll">
-                <h2 className="text-4xl font-bold text-gradient">Start Documenting Your Workflow</h2>
-                <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                  Transform chaotic processes into clear, actionable documentation that your team will actually use. 
-                  Join thousands of teams who've eliminated workflow confusion.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll stagger-1">
-                <Button size="lg" asChild className="group bg-gradient-to-r from-primary to-accent text-lg px-10 py-6 hover:animate-pulse hover:shadow-lg relative overflow-hidden">
-                  <Link to="/signup" className="flex items-center gap-3" data-testid="button-final-cta">
-                    <span className="relative z-10">Get Started Free</span>
-                    <ArrowRight className="w-5 h-5 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild className="glass-card border-primary/30 text-lg px-10 py-6 hover:border-primary/50 hover:shadow-md">
-                  <Link to="/login">Sign In</Link>
-                </Button>
-              </div>
-              <p className="text-sm text-muted-foreground animate-on-scroll stagger-2">
-                No credit card required • Start with freemium plan • Upgrade anytime
-              </p>
-            </div>
-          </section>
         </div>
       </main>
     </div>
