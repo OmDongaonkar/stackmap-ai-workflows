@@ -42,10 +42,10 @@ const Home = () => {
             </div>
             <div className="flex items-center gap-3">
               <ThemeToggle />
-              <Button variant="ghost" asChild className="hover-lift transition-all duration-300 hover:text-primary">
+              <Button variant="ghost" asChild className="transition-all duration-300 hover:text-primary">
                 <Link to="/login">Login</Link>
               </Button>
-              <Button asChild className="hover-lift bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:animate-pulse transition-all duration-300">
+              <Button asChild className="bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:animate-pulse transition-all duration-300">
                 <Link to="/signup">Sign Up</Link>
               </Button>
             </div>
@@ -91,14 +91,14 @@ const Home = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
-                <Button size="lg" asChild className="group hover-lift bg-gradient-to-r from-primary via-primary to-accent text-lg px-8 py-6 hover:animate-pulse relative overflow-hidden">
+                <Button size="lg" asChild className="group bg-gradient-to-r from-primary via-primary to-accent text-lg px-8 py-6 hover:animate-pulse hover:shadow-lg relative overflow-hidden">
                   <Link to="/signup" className="flex items-center gap-3" data-testid="button-hero-signup">
                     <span className="relative z-10">Get Started Free</span>
                     <ArrowRight className="w-5 h-5 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild className="hover-lift glass-card border-primary/30 text-lg px-8 py-6 hover:border-primary/50 transition-all duration-300">
+                <Button variant="outline" size="lg" asChild className="glass-card border-primary/30 text-lg px-8 py-6 hover:border-primary/50 hover:shadow-md transition-all duration-300">
                   <Link to="/login">Sign In</Link>
                 </Button>
               </div>
@@ -241,14 +241,14 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll stagger-1">
-                <Button size="lg" asChild className="group hover-lift bg-gradient-to-r from-primary to-accent text-lg px-10 py-6 hover:animate-pulse relative overflow-hidden">
+                <Button size="lg" asChild className="group bg-gradient-to-r from-primary to-accent text-lg px-10 py-6 hover:animate-pulse hover:shadow-lg relative overflow-hidden">
                   <Link to="/signup" className="flex items-center gap-3" data-testid="button-final-cta">
                     <span className="relative z-10">Get Started Free</span>
                     <ArrowRight className="w-5 h-5 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild className="hover-lift glass-card border-primary/30 text-lg px-10 py-6 hover:border-primary/50">
+                <Button variant="outline" size="lg" asChild className="glass-card border-primary/30 text-lg px-10 py-6 hover:border-primary/50 hover:shadow-md">
                   <Link to="/login">Sign In</Link>
                 </Button>
               </div>
